@@ -100,7 +100,6 @@ header {
 #works {
 	background: rgba(134,1,20,0.8);
 	color: #fff;
-
 	img {
 		max-width: 90%;
 	}
@@ -111,6 +110,11 @@ header {
 		border: none;
 		background: none;
 	}
+
+	//コントローラーの位置調整
+	.bx-wrapper .bx-prev { left: -50px; }
+	.bx-wrapper .bx-next { right: -50px; }
+	a { transition: none; }
 }
 
 
