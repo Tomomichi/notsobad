@@ -1,20 +1,4 @@
 /*****************************************************************
-* SETTING
-*****************************************************************/
-$MIDNIGHT-BLUE: #2C3E50;
-$BELIZE-HOLE: #2980B9;
-$ORANGE: #F39C12;
-$GREEN-SEA: #16A085;
-$WISTERIA: #8E44AD;
-$POMEGRANATE: #C0392B;
-$CARROT: #E67E22;
-$SILVER: #BDC3C7;
-$ALIZARIN: #E74C3C;
-$SUN-FLOWER: #F1C40F;
-$ASBESTOS: #7F8C8D;
-
-
-/*****************************************************************
 * COMMON
 *****************************************************************/
 body {
@@ -33,33 +17,9 @@ ul, li {
 	margin: 0;
 }
 
-@mixin flat-btn($size:middle, $color:orange) {
-	text-align: center;
-	display: block;
-	width: 100%;
-	color: white;
-	text-decoration: none;
-	border-style: none;
-	cursor: pointer;
-
-	@if($size == middle) {
-		padding: 15px;
-		font-size: 1.8em;
-		border-radius: 5px;
-	} @else {
-		padding: 20px;
-		font-size: 2.5em;
-		border-radius: 8px;
-	}
-
-	@if($color == orange) {
-		background: $CARROT;
-	} @else if($color == blue) {
-		background: $BELIZE-HOLE;
-	}
-
-	&:hover, &:active, &:focus {
-		background: lighten($color, 10%);
+@media all and (max-width: 480px) {
+	section.grid, section, header {
+		padding: 50px 0;
 	}
 }
 
@@ -94,6 +54,14 @@ header {
 	}
 }
 
+@media all and (max-width: 480px) {
+	header {
+		h1 { font-size: 4em; }
+		p { font-size: 1.2em; }
+	}
+}
+
+
 /*****************************************************************
 * WORKS
 *****************************************************************/
@@ -102,6 +70,10 @@ header {
 	color: #fff;
 	img {
 		max-width: 90%;
+	}
+	h2 a {
+		text-decoration: none;
+		color: #fff;
 	}
 
 	//デフォルトの背景色/ボーダーを無効化
@@ -115,6 +87,13 @@ header {
 	.bx-wrapper .bx-prev { left: -50px; }
 	.bx-wrapper .bx-next { right: -50px; }
 	a { transition: none; }
+}
+
+@media all and (max-width: 480px) {
+	#works {
+		.bx-wrapper .bx-prev, .bx-wrapper .bx-next { display: none; }
+		img { max-width: 100%; }
+	}
 }
 
 
@@ -135,6 +114,12 @@ header {
 	ul {
 		margin-top: 25px;
 		font-size: 1.5em;
+	}
+}
+
+@media all and (max-width: 480px) {
+	#member {
+		.col_7 { text-align: center; }
 	}
 }
 
