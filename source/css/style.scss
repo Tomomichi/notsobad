@@ -1,0 +1,161 @@
+/*****************************************************************
+* SETTING
+*****************************************************************/
+$MIDNIGHT-BLUE: #2C3E50;
+$BELIZE-HOLE: #2980B9;
+$ORANGE: #F39C12;
+$GREEN-SEA: #16A085;
+$WISTERIA: #8E44AD;
+$POMEGRANATE: #C0392B;
+$CARROT: #E67E22;
+$SILVER: #BDC3C7;
+$ALIZARIN: #E74C3C;
+$SUN-FLOWER: #F1C40F;
+$ASBESTOS: #7F8C8D;
+
+
+/*****************************************************************
+* COMMON
+*****************************************************************/
+body {
+	background: url("../css/img/gray_jean.png");
+	font-family: 'Abel', sans-serif;
+	color: #333;
+	margin: 0;
+}
+
+section.grid, section, header {
+	padding: 100px 0;
+}
+
+ul, li {
+	list-style: none;
+	margin: 0;
+}
+
+@mixin flat-btn($size:middle, $color:orange) {
+	text-align: center;
+	display: block;
+	width: 100%;
+	color: white;
+	text-decoration: none;
+	border-style: none;
+	cursor: pointer;
+
+	@if($size == middle) {
+		padding: 15px;
+		font-size: 1.8em;
+		border-radius: 5px;
+	} @else {
+		padding: 20px;
+		font-size: 2.5em;
+		border-radius: 8px;
+	}
+
+	@if($color == orange) {
+		background: $CARROT;
+	} @else if($color == blue) {
+		background: $BELIZE-HOLE;
+	}
+
+	&:hover, &:active, &:focus {
+		background: lighten($color, 10%);
+	}
+}
+
+
+/*****************************************************************
+* HEADER
+*****************************************************************/
+header {
+	background: rgba(242,234,192,0.8);
+	h1 {
+		display: inline-block;
+		font-size: 10em;
+		line-height: 1.2em;
+		border-bottom: 3px solid #555;
+
+		background: rgba(255,255,255,0) url(data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAAHklEQVQImWNkYGBgYGD4//8/A5wF5SBYyAr+//8PAPOCFO0Q2zq7AAAAAElFTkSuQmCC) repeat;
+		text-shadow: -4px -4px black, -3px -3px rgba(255,255,255,0.5);
+		-webkit-text-fill-color: transparent;
+		-webkit-background-clip: text;
+
+		&:after {
+			content: '';
+			display: block;
+			width: 100%;
+			border-bottom: 1px solid #efefef;
+			position: relative;
+			bottom: -4px;
+		}
+	}
+	p {
+		font-size: 2em;
+	}
+}
+
+/*****************************************************************
+* WORKS
+*****************************************************************/
+#works {
+	background: rgba(134,1,20,0.8);
+	color: #fff;
+
+	img {
+		max-width: 90%;
+	}
+
+	//デフォルトの背景色/ボーダーを無効化
+	.bx-wrapper, .bx-viewport {
+		box-shadow: none;
+		border: none;
+		background: none;
+	}
+}
+
+
+/*****************************************************************
+* MEMBER
+*****************************************************************/
+#member {
+	.col_5 div {
+		background: url("../img/profile.jpg");
+		background-size: cover;
+		border-radius: 50%;
+		overflow: hidden;
+		margin: 0 auto;
+		height: 250px;
+		width: 250px;
+	}
+
+	ul {
+		margin-top: 25px;
+		font-size: 1.5em;
+	}
+}
+
+
+/*****************************************************************
+* ABOUT
+*****************************************************************/
+#about {
+	background: rgba(0,139,139,0.8);
+	color: #fff;
+
+	table {
+		line-height: 2.0em;
+	}
+}
+
+
+/*****************************************************************
+* FOOTER
+*****************************************************************/
+footer {
+	margin-top: 30px;
+	a {
+		text-decoration: none;
+		color: rgb(134,1,20);
+		margin: 0 5px;
+	}
+}
