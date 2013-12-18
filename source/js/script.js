@@ -11,6 +11,10 @@ $(function(){
     return false;
   });
 
+  /* headerを画面サイズに合わせる */
+  $("header").height($(window).height()-70);
+
+
   /* スクロールした時の処理 */
   var nav_offset = $("nav").offset().top;
   var philosophy_offset = $("#philosophy").offset().top;
@@ -28,19 +32,20 @@ $(function(){
       $("#philosophy").removeClass("after-navfix");
     }
 
+
     /* 表示中メニューの色変え */
     var scrollHeight = $(document).height();
     var scrollPosition = $(window).height() + $(window).scrollTop() + nav_height;
-    if($(this).scrollTop()+nav_height > about_offset || scrollHeight - scrollPosition < 0 ) {
+    if($(this).scrollTop()+nav_height >= about_offset || scrollHeight - scrollPosition < 0 ) {
       $("nav li a").removeClass("active");
       $("nav li:nth-child(1) a").addClass("active");
-    }else if($(this).scrollTop()+nav_height > member_offset) {
+    }else if($(this).scrollTop()+nav_height >= member_offset) {
       $("nav li a").removeClass("active");
       $("nav li:nth-child(2) a").addClass("active");
-    }else if($(this).scrollTop()+nav_height > works_offset) {
+    }else if($(this).scrollTop()+nav_height >= works_offset) {
       $("nav li a").removeClass("active");
       $("nav li:nth-child(3) a").addClass("active");
-    }else if($(this).scrollTop()+nav_height > philosophy_offset) {
+    }else if($(this).scrollTop()+nav_height >= philosophy_offset) {
       $("nav li a").removeClass("active");
       $("nav li:nth-child(4) a").addClass("active");
     }else {
