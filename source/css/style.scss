@@ -86,7 +86,7 @@ nav {
     color: #fff;
     text-decoration: none;
     &:first-child { float: left; }
-    &:hover {
+    &:hover, &.active {
       color: #FF6699;
     }
   }
