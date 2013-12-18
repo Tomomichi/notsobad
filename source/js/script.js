@@ -4,7 +4,7 @@ $(function(){
     var speed = 500;
     var href= $(this).attr("href");
     var target = $(href == "#" || href == "" ? 'html' : href);
-    var position = target.offset().top;
+    var position = target.offset().top - 70;
     $("html, body").animate({scrollTop:position}, speed, "swing");
     return false;
   });
@@ -14,8 +14,10 @@ $(function(){
   $(window).scroll(function(){
     if($(this).scrollTop() > nav_offset) {
       $("nav").addClass("fixed");
+      $("#philosophy").addClass("after-navfix");
     }else {
       $("nav").removeClass("fixed");
+      $("#philosophy").removeClass("after-navfix");
     }
   });
 });
