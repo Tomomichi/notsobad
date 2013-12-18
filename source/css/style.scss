@@ -7,6 +7,9 @@ body {
 	color: #333;
 	margin: 0;
 }
+html, body {
+  height: 100%;
+}
 
 section.grid, section, header {
 	padding: 100px 0;
@@ -51,6 +54,7 @@ header {
 	}
 	p {
 		font-size: 3em;
+		text-shadow: 1px 1px rgba(255,255,255,0.7);
 	}
 }
 
@@ -59,6 +63,38 @@ header {
 		h1 { font-size: 4em; }
 		p { font-size: 1.2em; }
 	}
+}
+
+
+/*****************************************************************
+* NAV
+*****************************************************************/
+nav {
+  background: rgba(0,0,0,0.8);
+  font-size: 2em;
+  padding: 15px 0;
+  width: 100%;
+  height: 70px;
+  &.fixed {
+    position: fixed;
+    top: 0;
+    z-index: 10000;
+  }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+    &:first-child { float: left; }
+    &:hover {
+      color: #FF6699;
+    }
+  }
+
+  li {
+    float: right;
+    margin-right: 30px;
+    padding: 0;
+  }
 }
 
 
