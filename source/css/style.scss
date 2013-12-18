@@ -31,12 +31,12 @@ header {
 	background: rgba(242,234,192,0.8);
 	h1 {
 		display: inline-block;
-		font-size: 10em;
+		font-size: 12em;
 		line-height: 1.2em;
-		border-bottom: 3px solid #555;
+		border-bottom: 1px solid #333;
 
 		background: rgba(255,255,255,0) url(data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAAHklEQVQImWNkYGBgYGD4//8/A5wF5SBYyAr+//8PAPOCFO0Q2zq7AAAAAElFTkSuQmCC) repeat;
-		text-shadow: -4px -4px black, -3px -3px rgba(255,255,255,0.5);
+		text-shadow: -4px -4px #333, -3px -3px rgba(255,255,255,0.5);
 		-webkit-text-fill-color: transparent;
 		-webkit-background-clip: text;
 
@@ -44,13 +44,13 @@ header {
 			content: '';
 			display: block;
 			width: 100%;
-			border-bottom: 1px solid #efefef;
+			border-bottom: 1px solid rgba(255,255,255,0.5);
 			position: relative;
-			bottom: -4px;
+			bottom: -2px;
 		}
 	}
 	p {
-		font-size: 2em;
+		font-size: 3em;
 	}
 }
 
