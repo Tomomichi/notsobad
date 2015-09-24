@@ -67,4 +67,12 @@ configure :build do
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
+  activate :asset_host, :host => "/notsobad"
+end
+
+# Deploy
+activate :deploy do |deploy|
+  deploy.build_before = true
+  deploy.method = :git
+  deploy.branch = 'gh-pages'
 end
