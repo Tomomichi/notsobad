@@ -3,174 +3,155 @@
   <head>
     <meta charset='utf-8'>
     <title>NOT SO BAD</title>
-    <meta content='NOT SO BAD, Tomomichi Onishi, BOOK PAD' name='keywords'>
-    <meta content='Website of NOT SO BAD, web development company.' name='description'>
+    <meta content='NOT SO BAD, Tomomichi Onishi' name='keywords'>
+    <meta content='Towards a not so bad world.' name='description'>
     <meta content='width=device-width, initial-scale=1, minimum-scale=1' name='viewport'>
-    <link href='./css/kickstart.css' rel='stylesheet'>
-    <link href='./css/style.css' rel='stylesheet'>
-    <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
-    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
-    <script src='./js/kickstart.js'></script>
-    <script src='./js/script.js'></script>
+    <link href='./assets/semantic/semantic.min.css' rel='stylesheet'>
+    <link href='./assets/css/application.css' rel='stylesheet'>
+    <script src='https://code.jquery.com/jquery-2.1.4.min.js'></script>
+    <script src='./assets/semantic/semantic.min.js'></script>
+    <script src='./assets/js/application.js'></script>
     <meta content='Cj5CPp60p_YthkYoq1iWglo8d6yEfapurd-RmBKW0fs' name='google-site-verification'>
   </head>
   <body class='center'>
-    <header id='top'>
-      <h1>NOT SO BAD</h1>
-      <p>Towards a not so bad world.</p>
-      <p>
-        <a href='#philosophy'>
-          <i class='icon-double-angle-down icon-2x'></i>
-        </a>
-      </p>
-    </header>
-    <nav>
-      <div class='grid'>
-        <div class='clearfix'>
-          <a href='#top'>NOT SO BAD</a>
-          <ul>
-            <li>
-              <a href='#about'>About</a>
-            </li>
-            <li>
-              <a href='#member'>Member</a>
-            </li>
-            <li>
-              <a href='#works'>Works</a>
-            </li>
-            <li>
-              <a href='#philosophy'>Philosophy</a>
-            </li>
-          </ul>
+    <header>
+      <div class='ui grid'>
+        <div class='column' id='top'>
+          <h1>
+            <img alt='NOT SO BAD' src='./assets/img/logo@2x.png'>
+          </h1>
+          <div class='ui divider'></div>
+          <p>Towards a not so bad world.</p>
         </div>
       </div>
-    </nav>
-    <section class='grid clearfix' id='philosophy'>
+    </header>
+    <section id='menu'>
+      <div class='ui inverted attached menu center aligned segment'>
+        <div class='ui inverted secondary pointing menu center aligned'>
+          <a class='item active'>Home</a>
+          <a class='item' href='#policy'>Policy</a>
+          <a class='item' href='#works'>Works</a>
+          <a class='item' href='#member'>Member</a>
+          <a class='item' href='#about'>About</a>
+        </div>
+      </div>
+    </section>
+    <section id='policy'>
       <h1 class='hide'>PHILOSOPHY</h1>
-      <div class='col_4'>
-        <h2>Focus on<br><strong>NICHE</strong></h2>
-        <p>Keep focusing on your favourite niche market.</p>
-      </div>
-      <div class='col_4'>
-        <h2><strong>SMALL</strong> is<br>Beautiful</h2>
-        <p>Make things simple, small and beautiful.</p>
-      </div>
-      <div class='col_4'>
-        <h2>Sense of<br><strong>HUMOUR</strong></h2>
-        <p>Never forget a sense of humour in your life.</p>
+      <div class='ui three column grid center aligned'>
+        <div class='column'>
+          <img class='ui centered small circular image' src='./assets/img/niche.png'>
+          <h2>NICHE</h2>
+          <p>Keep focusing on your favourite niche market.</p>
+        </div>
+        <div class='column'>
+          <img class='ui centered small circular image' src='./assets/img/unique.png'>
+          <h2>UNIQUE</h2>
+          <p>Do what other people never do.</p>
+        </div>
+        <div class='column'>
+          <img class='ui centered small circular image' src='./assets/img/humour.png'>
+          <h2>HUMOUR</h2>
+          <p>Never forget a sense of humour in your life.</p>
+        </div>
       </div>
     </section>
     <section id='works'>
       <h1 class='hide'>WORKS</h1>
-      <div class='grid clearfix'>
-        <ul class='slideshow'>
-          <li>
-            <div class='col_6'>
-              <a href='http://the-tournament.jp/about' target='_blank'>
-                <img src='./img/works/the-tournament.png'>
-              </a>
-            </div>
-            <div class='col_6 left'>
-              <h2>
-                <a href='http://the-tournament.jp/about' target='_blank'>THE TOURNAMENT</a>
-              </h2>
-              <p>THE TOURNAMENT is a simple and easy-to-use service for creating cool tournament bracket.</p>
-            </div>
-          </li>
-          <li>
-            <div class='col_6'>
-              <a href='http://bungomail.notsobad.jp' target='_blank'>
-                <img src='./img/works/bungomail.png'>
-              </a>
-            </div>
-            <div class='col_6 left'>
-              <h2>
-                <a href='http://bungomail.notsobad.jp' target='_blank'>ブンゴウメール</a>
-              </h2>
-              <p>ブンゴウメール sends you an email almost every morning with short stories from Aozora bunko.</p>
-            </div>
-          </li>
-          <li>
-            <div class='col_6'>
-              <a href='http://booklovesmusic.com' target='_blank'>
-                <img src='./img/works/blm.png'>
-              </a>
-            </div>
-            <div class='col_6 left'>
-              <h2>
-                <a href='http://booklovesmusic.com' target='_blank'>book loves music</a>
-              </h2>
-              <p>booklovesmusic offers you the music recommendation suited for the book you're reading now.</p>
-            </div>
-          </li>
-        </ul>
+      <div class='ui three columns grid'>
+        <div class='column'>
+          <img class='ui image rounded ' src='./assets/img/works/the-tournament.png'>
+          <h2>THE TOURNAMENT</h2>
+          <p>THE TOURNAMENT is a simple and easy-to-use service for creating cool tournament bracket.</p>
+        </div>
+        <div class='column'>
+          <img class='ui image rounded ' src='./assets/img/works/bungomail.png'>
+          <h2>ブンゴウメール</h2>
+          <p>ブンゴウメール sends you an email almost every morning with short stories from Aozora bunko.</p>
+        </div>
+        <div class='column'>
+          <img class='ui image rounded ' src='./assets/img/works/blm.png'>
+          <h2>book loves music</h2>
+          <p>booklovesmusic offers you the music recommendation suited for the book you're reading now.</p>
+        </div>
       </div>
     </section>
-    <section class='grid clearfix' id='member'>
+    <section id='member'>
       <h1 class='hide'>MEMBER</h1>
-      <div class='col_5'>
-        <div></div>
-      </div>
-      <div class='col_7 left'>
-        <h2>Tomomichi Onishi</h2>
-        <p>Web Developer, CEO at NOT SO BAD</p>
-        <ul>
-          <li>
-            <i class='icon-github-alt'></i>
-            GITHUB:
-            <a href='https://github.com/Tomomichi' target='_blank'>Tomomichi</a>
-          </li>
-          <li>
-            <i class='icon-twitter'></i>
-            TWITTER:
-            <a href='https://twitter.com/kame_f_no7' target='_blank'>kame_f_no7</a>
-          </li>
-          <li>
-            <i class='icon-facebook-sign'></i>
-            FACEBOOK:
-            <a href='https://www.facebook.com/tomomichi.onishi' target='_blank'>Tomomichi Onishi</a>
-          </li>
-        </ul>
+      <div class='ui grid'>
+        <div class='ui center two column row'>
+          <div class='column'>
+            <div class='ui'>
+              <img class='ui image small circular right floated' src='./assets/img/profile.png'>
+            </div>
+          </div>
+          <div class='column'>
+            <div class='ui'>
+              <h2>Tomomichi Onishi</h2>
+              <p>Web Director/Developer</p>
+              <ul>
+                <li>
+                  <a href='https://twitter.com/kame_f_no7' target='_blank'>
+                    <button class='ui circular icon twitter button'>
+                      <i class='twitter icon'></i>
+                    </button>
+                  </a>
+                  <a href='https://www.facebook.com/tomomichi.onishi' target='_blank'>
+                    <button class='ui circular icon facebook button'>
+                      <i class='facebook icon'></i>
+                    </button>
+                  </a>
+                  <a href='https://github.com/Tomomichi' target='_blank'>
+                    <button class='ui circular icon button'>
+                      <i class='github alternate icon'></i>
+                    </button>
+                  </a>
+                  <button class='ui circular icon button'>
+                    <i class='mail icon'></i>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <section id='about'>
       <h1 class='hide'>ABOUT</h1>
-      <div class='grid clearfix'>
-        <table>
-          <tr>
-            <th>Company</th>
-            <td>NOT SO BAD</td>
-          </tr>
-          <tr>
-            <th>Established</th>
-            <td>1 Sep 2013</td>
-          </tr>
-          <tr>
-            <th>Founder</th>
-            <td>Tomomichi Onishi</td>
-          </tr>
-          <tr>
-            <th>Service</th>
-            <td>Web development, consulting and owned services.</td>
-          </tr>
-          <tr>
-            <th>Address</th>
-            <td>27-3 Nakafudanotsujicho, Higashikujo Minami-ku, Kyoto, Japan</td>
-          </tr>
-          <tr>
-            <th>Contact</th>
-            <td>
-              Mail: info@notsobad.jp
-            </td>
-          </tr>
-        </table>
-      </div>
+      <table class='ui black table'>
+        <tr>
+          <td>Company</td>
+          <td>NOT SO BAD</td>
+        </tr>
+        <tr>
+          <td>Established</td>
+          <td>1 Sep 2013</td>
+        </tr>
+        <tr>
+          <td>Founder</td>
+          <td>Tomomichi Onishi</td>
+        </tr>
+        <tr>
+          <td>Service</td>
+          <td>Web development, consulting and owned services.</td>
+        </tr>
+        <tr>
+          <td>Address</td>
+          <td>27-3 Nakafudanotsujicho, Higashikujo Minami-ku, Kyoto, Japan</td>
+        </tr>
+        <tr>
+          <td>Contact</td>
+          <td>
+            Mail: info@notsobad.jp
+          </td>
+        </tr>
+      </table>
     </section>
     <footer>
-      <p>
+      <p class='ui center aligned'>
         Copyright
         <a href='/'>NOT SO BAD</a>
-        2013-2015 All Rights Reserved.
+        All Rights Reserved.
       </p>
     </footer>
   </body>
