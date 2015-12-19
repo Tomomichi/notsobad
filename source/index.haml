@@ -1,113 +1,104 @@
-%header#top
-  %h1 NOT SO BAD
-  %p Towards a not so bad world.
-  %p
-    %a(href="#philosophy")
-      %i.icon-double-angle-down.icon-2x
-
-%nav
-  %div.grid
-    %div.clearfix
-      %a(href="#top") NOT SO BAD
-      %ul
-        %li
-          %a(href="#about") About
-        %li
-          %a(href="#member") Member
-        %li
-          %a(href="#works") Works
-        %li
-          %a(href="#philosophy") Philosophy
+%header
+  .ui.grid
+    .column#top
+      %h1
+        %img(src="./assets/img/logo@2x.png" alt="NOT SO BAD")
+      .ui.divider
+      %p Towards a not so bad world.
 
 
-%section#philosophy.grid.clearfix
+%section#menu
+  .ui.inverted.attached.menu.center.aligned.segment
+    .ui.inverted.secondary.pointing.menu.center.aligned
+      %a(class="item active") Home
+      %a(class="item" href="#policy") Policy
+      %a(class="item" href="#works") Works
+      %a(class="item" href="#member") Member
+      %a(class="item" href="#about") About
+
+%section#policy
   %h1.hide PHILOSOPHY
-  %div.col_4
-    %h2 Focus on<br><strong>NICHE</strong>
-    %p Keep focusing on your favourite niche market.
-  %div.col_4
-    %h2 <strong>SMALL</strong> is<br>Beautiful
-    %p Make things simple, small and beautiful.
-  %div.col_4
-    %h2 Sense of<br><strong>HUMOUR</strong>
-    %p Never forget a sense of humour in your life.
+  .ui.three.column.grid.center.aligned
+    .column
+      %img(src="./assets/img/niche.png" class="ui centered small circular image")
+      %h2 NICHE
+      %p Keep focusing on your favourite niche market.
+    .column
+      %img(src="./assets/img/unique.png" class="ui centered small circular image")
+      %h2 UNIQUE
+      %p Do what other people never do.
+    .column
+      %img(src="./assets/img/humour.png" class="ui centered small circular image")
+      %h2 HUMOUR
+      %p Never forget a sense of humour in your life.
 
 %section#works
   %h1.hide WORKS
-  %div.grid.clearfix
-    %ul.slideshow
-      %li
-        %div.col_6
-          %a(href="http://the-tournament.jp/about" target="_blank")
-            %img(src="./img/works/the-tournament.png")
-        %div.col_6.left
-          %h2
-            %a(href="http://the-tournament.jp/about" target="_blank") THE TOURNAMENT
-          %p THE TOURNAMENT is a simple and easy-to-use service for creating cool tournament bracket.
-      %li
-        %div.col_6
-          %a(href="http://bungomail.notsobad.jp" target="_blank")
-            %img(src="./img/works/bungomail.png")
-        %div.col_6.left
-          %h2
-            %a(href="http://bungomail.notsobad.jp" target="_blank") ブンゴウメール
-          %p ブンゴウメール sends you an email almost every morning with short stories from Aozora bunko.
-      %li
-        %div.col_6
-          %a(href="http://booklovesmusic.com" target="_blank")
-            %img(src="./img/works/blm.png")
-        %div.col_6.left
-          %h2
-            %a(href="http://booklovesmusic.com" target="_blank") book loves music
-          %p booklovesmusic offers you the music recommendation suited for the book you're reading now.
+  .ui.three.columns.grid
+    .column
+      %img(src="./assets/img/works/the-tournament.png" class="ui image rounded ")
+      %h2 THE TOURNAMENT
+      %p THE TOURNAMENT is a simple and easy-to-use service for creating cool tournament bracket.
+    .column
+      %img(src="./assets/img/works/bungomail.png" class="ui image rounded ")
+      %h2 ブンゴウメール
+      %p ブンゴウメール sends you an email almost every morning with short stories from Aozora bunko.
+    .column
+      %img(src="./assets/img/works/blm.png" class="ui image rounded ")
+      %h2 book loves music
+      %p booklovesmusic offers you the music recommendation suited for the book you're reading now.
 
-%section#member.grid.clearfix
+
+%section#member
   %h1.hide MEMBER
-  %div.col_5
-    %div
-  %div.col_7.left
-    %h2 Tomomichi Onishi
-    %p Web Developer, CEO at NOT SO BAD
-    %ul
-      %li
-        %i.icon-github-alt
-        GITHUB:
-        %a(href="https://github.com/Tomomichi" target="_blank") Tomomichi
-      %li
-        %i.icon-twitter
-        TWITTER:
-        %a(href="https://twitter.com/kame_f_no7" target="_blank") kame_f_no7
-      %li
-        %i.icon-facebook-sign
-        FACEBOOK:
-        %a(href="https://www.facebook.com/tomomichi.onishi" target="_blank") Tomomichi Onishi
+  .ui.grid
+    .ui.center.two.column.row
+      .column
+        .ui
+          %img(src="./assets/img/profile.png" class="ui image small circular right floated")
+      .column
+        .ui
+          %h2 Tomomichi Onishi
+          %p Web Director/Developer
+          %ul
+            %li
+              %a(href="https://twitter.com/kame_f_no7" target="_blank")
+                %button(class="ui circular icon twitter button")
+                  %i(class="twitter icon")
+              %a(href="https://www.facebook.com/tomomichi.onishi" target="_blank")
+                %button(class="ui circular icon facebook button")
+                  %i(class="facebook icon")
+              %a(href="https://github.com/Tomomichi" target="_blank")
+                %button(class="ui circular icon button")
+                  %i(class="github alternate icon")
+              %button(class="ui circular icon button")
+                %i(class="mail icon")
 
 %section#about
   %h1.hide ABOUT
-  %div.grid.clearfix
-    %table
-      %tr
-        %th Company
-        %td NOT SO BAD
-      %tr
-        %th Established
-        %td 1 Sep 2013
-      %tr
-        %th Founder
-        %td Tomomichi Onishi
-      %tr
-        %th Service
-        %td Web development, consulting and owned services.
-      %tr
-        %th Address
-        %td 27-3 Nakafudanotsujicho, Higashikujo Minami-ku, Kyoto, Japan
-      %tr
-        %th Contact
-        %td
-          Mail: info@notsobad.jp
+  %table.ui.black.table
+    %tr
+      %td Company
+      %td NOT SO BAD
+    %tr
+      %td Established
+      %td 1 Sep 2013
+    %tr
+      %td Founder
+      %td Tomomichi Onishi
+    %tr
+      %td Service
+      %td Web development, consulting and owned services.
+    %tr
+      %td Address
+      %td 27-3 Nakafudanotsujicho, Higashikujo Minami-ku, Kyoto, Japan
+    %tr
+      %td Contact
+      %td
+        Mail: info@notsobad.jp
 
 %footer
-  %p
+  %p.ui.center.aligned
     Copyright
     %a(href="/") NOT SO BAD
-    2013-#{Date.today.year} All Rights Reserved.
+    All Rights Reserved.
