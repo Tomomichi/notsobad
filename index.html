@@ -15,13 +15,13 @@
   </head>
   <body class='center'>
     <header>
-      <div class='ui grid'>
-        <div class='column' id='top'>
+      <div class='ui centered grid'>
+        <div class='column ten wide computer sixteen wide mobile'>
           <h1>
             <img alt='NOT SO BAD' src='./assets/img/logo@2x.png'>
           </h1>
           <div class='ui divider'></div>
-          <p>Towards a not so bad world.</p>
+          <p class='ui basic segment center aligned'>Towards a not so bad world.</p>
         </div>
       </div>
     </header>
@@ -38,7 +38,7 @@
     </section>
     <section id='policy'>
       <h1 class='hide'>PHILOSOPHY</h1>
-      <div class='ui three column grid center aligned'>
+      <div class='ui three column stackable grid center aligned'>
         <div class='column'>
           <img class='ui centered small circular image' src='./assets/img/niche.png'>
           <h2>NICHE</h2>
@@ -58,21 +58,45 @@
     </section>
     <section id='works'>
       <h1 class='hide'>WORKS</h1>
-      <div class='ui three columns grid'>
+      <div class='ui three column stackable grid'>
         <div class='column'>
-          <img class='ui image rounded ' src='./assets/img/works/the-tournament.png'>
+          <a href='http://the-tournament.jp/about' target='_blank'>
+            <img alt='THE TOURNAMENT' class='ui image rounded' src='./assets/img/works/the-tournament.png'>
+          </a>
           <h2>THE TOURNAMENT</h2>
           <p>THE TOURNAMENT is a simple and easy-to-use service for creating cool tournament bracket.</p>
+          <div>
+            <a href='http://the-tournament.jp/about' target='_blank'>
+              See more
+              <i class='right chevron icon'></i>
+            </a>
+          </div>
         </div>
         <div class='column'>
-          <img class='ui image rounded ' src='./assets/img/works/bungomail.png'>
+          <a href='http://bungomail.notsobad.jp' target='_blank'>
+            <img alt='ブンゴウメール' class='ui image rounded' src='./assets/img/works/bungomail.png'>
+          </a>
           <h2>ブンゴウメール</h2>
           <p>ブンゴウメール sends you an email almost every morning with short stories from Aozora bunko.</p>
+          <div>
+            <a href='http://bungomail.notsobad.jp' target='_blank'>
+              See more
+              <i class='right chevron icon'></i>
+            </a>
+          </div>
         </div>
         <div class='column'>
-          <img class='ui image rounded ' src='./assets/img/works/blm.png'>
+          <a href='http://booklovesmusic.com' target='_blank'>
+            <img class='ui image rounded ' src='./assets/img/works/blm.png'>
+          </a>
           <h2>book loves music</h2>
           <p>booklovesmusic offers you the music recommendation suited for the book you're reading now.</p>
+          <div>
+            <a href='http://booklovesmusic.com' target='_blank'>
+              See more
+              <i class='right chevron icon'></i>
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -106,9 +130,11 @@
                       <i class='github alternate icon'></i>
                     </button>
                   </a>
-                  <button class='ui circular icon button'>
-                    <i class='mail icon'></i>
-                  </button>
+                  <a href='mailto:info@notsobad.jp'>
+                    <button class='ui circular icon button'>
+                      <i class='mail icon'></i>
+                    </button>
+                  </a>
                 </li>
               </ul>
             </div>
@@ -148,11 +174,11 @@
       </table>
     </section>
     <footer>
-      <p class='ui center aligned'>
+      <small>
         Copyright
         <a href='/'>NOT SO BAD</a>
         All Rights Reserved.
-      </p>
+      </small>
     </footer>
   </body>
 </html>
