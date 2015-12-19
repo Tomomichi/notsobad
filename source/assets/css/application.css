@@ -3,18 +3,12 @@
 
 header {
   background: #F1EAC2;
+  padding: 70px 0;
 }
-#top {
-  width: 80%;
-  margin: 0 auto;
-  padding: 150px;
+header img {
+  max-width: 100%;
 }
-
-#top img {
-  width: 100%;
-}
-#top p {
-  text-align: center;
+header p {
   font-size: 2.0rem;
 }
 

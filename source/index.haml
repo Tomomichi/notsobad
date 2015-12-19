@@ -1,10 +1,10 @@
 %header
-  .ui.grid
-    .column#top
+  .ui.centered.grid
+    .column.ten.wide.computer.sixteen.wide.mobile
       %h1
         %img(src="./assets/img/logo@2x.png" alt="NOT SO BAD")
       .ui.divider
-      %p Towards a not so bad world.
+      %p.ui.basic.segment.center.aligned Towards a not so bad world.
 
 
 %section#menu
@@ -18,7 +18,7 @@
 
 %section#policy
   %h1.hide PHILOSOPHY
-  .ui.three.column.grid.center.aligned
+  .ui.three.column.stackable.grid.center.aligned
     .column
       %img(src="./assets/img/niche.png" class="ui centered small circular image")
       %h2 NICHE
@@ -34,19 +34,34 @@
 
 %section#works
   %h1.hide WORKS
-  .ui.three.columns.grid
+  .ui.three.column.stackable.grid
     .column
-      %img(src="./assets/img/works/the-tournament.png" class="ui image rounded ")
+      %a(href="http://the-tournament.jp/about" target="_blank")
+        %img(src="./assets/img/works/the-tournament.png" class="ui image rounded" alt="THE TOURNAMENT")
       %h2 THE TOURNAMENT
       %p THE TOURNAMENT is a simple and easy-to-use service for creating cool tournament bracket.
+      %div
+        %a(href="http://the-tournament.jp/about" target="_blank")
+          See more
+          %i.right.chevron.icon
     .column
-      %img(src="./assets/img/works/bungomail.png" class="ui image rounded ")
+      %a(href="http://bungomail.notsobad.jp" target="_blank")
+        %img(src="./assets/img/works/bungomail.png" class="ui image rounded" alt="ブンゴウメール")
       %h2 ブンゴウメール
       %p ブンゴウメール sends you an email almost every morning with short stories from Aozora bunko.
+      %div
+        %a(href="http://bungomail.notsobad.jp" target="_blank")
+          See more
+          %i.right.chevron.icon
     .column
-      %img(src="./assets/img/works/blm.png" class="ui image rounded ")
+      %a(href="http://booklovesmusic.com" target="_blank")
+        %img(src="./assets/img/works/blm.png" class="ui image rounded ")
       %h2 book loves music
       %p booklovesmusic offers you the music recommendation suited for the book you're reading now.
+      %div
+        %a(href="http://booklovesmusic.com" target="_blank")
+          See more
+          %i.right.chevron.icon
 
 
 %section#member
@@ -71,8 +86,9 @@
               %a(href="https://github.com/Tomomichi" target="_blank")
                 %button(class="ui circular icon button")
                   %i(class="github alternate icon")
-              %button(class="ui circular icon button")
-                %i(class="mail icon")
+              %a(href="mailto:info@notsobad.jp")
+                %button(class="ui circular icon button")
+                  %i(class="mail icon")
 
 %section#about
   %h1.hide ABOUT
@@ -98,7 +114,7 @@
         Mail: info@notsobad.jp
 
 %footer
-  %p.ui.center.aligned
+  %small
     Copyright
     %a(href="/") NOT SO BAD
     All Rights Reserved.
