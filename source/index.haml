@@ -10,7 +10,6 @@
 %section#menu
   .ui.inverted.attached.menu.center.aligned.segment
     .ui.inverted.secondary.pointing.menu.center.aligned
-      %a(class="item active") Home
       %a(class="item" href="#policy") Policy
       %a(class="item" href="#works") Works
       %a(class="item" href="#member") Member
@@ -34,7 +33,16 @@
 
 %section#works
   %h1.hide WORKS
-  .ui.three.column.stackable.grid
+  .ui.four.column.stackable.grid
+    .column
+      %a(href="http://karta.notsobad.jp" target="_blank")
+        %img(src="./assets/img/works/spkarta.png" class="ui image rounded" alt="スマホde百人一首")
+      %h2 スマホde百人一首
+      %p スマホde百人一首は、みんなのスマホを取り札にして遊べる、お正月にぴったりの百人一首サービスです。
+      %div
+        %a(href="http://karta.notsobad.jp" target="_blank")
+          See more
+          %i.right.chevron.icon
     .column
       %a(href="http://the-tournament.jp/about" target="_blank")
         %img(src="./assets/img/works/the-tournament.png" class="ui image rounded" alt="THE TOURNAMENT")
@@ -84,10 +92,10 @@
                 %button(class="ui circular icon facebook button")
                   %i(class="facebook icon")
               %a(href="https://github.com/Tomomichi" target="_blank")
-                %button(class="ui circular icon button")
+                %button(class="ui circular grey icon button")
                   %i(class="github alternate icon")
               %a(href="mailto:info@notsobad.jp")
-                %button(class="ui circular icon button")
+                %button(class="ui circular orange icon button")
                   %i(class="mail icon")
 
 %section#about
@@ -113,7 +121,7 @@
       %td
         Mail: info@notsobad.jp
 
-%footer
+%footer.ui.footer.inverted.basic.segment.center.aligned
   %small
     Copyright
     %a(href="/") NOT SO BAD
