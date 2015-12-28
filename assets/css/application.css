@@ -1,5 +1,9 @@
 * { font-size: 14px; }
 .hide { display: none; }
+#container {
+  width: 100%;
+  overflow: hidden;
+}
 
 header {
   background: #F1EAC2;
@@ -51,10 +55,13 @@ header p {
 }
 
 footer {
-  background: #333;
-  padding: 30px;
-  color: #fff;
+  padding: 15px !important;
+  margin-top: 0 !important;
+  color: #999 !important;
 }
 footer a, footer a:visited {
   color: #fff;
+}
+footer small a {
+  font-size: 80%;
 }
