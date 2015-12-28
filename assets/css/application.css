@@ -5,6 +5,10 @@
   overflow: hidden;
 }
 
+h3 {
+  font-size: 1.5rem !important;
+}
+
 header {
   background: #F1EAC2;
   padding: 70px 0;
